@@ -39,7 +39,9 @@ header{position:fixed;top:0;left:0;right:0;z-index:20;display:flex;justify-conte
 header .logo{display:flex;align-items:center;gap:10px;font:400 26px/1 var(--serif)}
 header .logo img{width:26px;transition:filter .4s;filter:brightness(0) invert(1)}
 header.dark{color:var(--navy)}
-header.dark .logo img{filter:none}
+header.dark .logo img{filter:none;content:url(emblem-navy.png)}
+header.hide{transform:translateY(-110%)}
+header{transition:color .4s,transform .5s var(--ease)}
 header nav{display:flex;gap:34px}
 header nav a{opacity:.85}
 header nav a:hover{opacity:1}
@@ -241,7 +243,9 @@ header nav a:hover{opacity:1}
     const y = 40; // header line
     const onLight = lights.some(s => { const b = s.getBoundingClientRect(); return b.top <= y && b.bottom >= y; });
     hd.classList.toggle('dark', onLight);
+    const sy = scrollY; hd.classList.toggle('hide', sy > lastY && sy > 200); lastY = sy;
   };
+  let lastY = 0;
   addEventListener('scroll', onScroll, {passive:true}); onScroll();
   const g = document.querySelector('.giant');
   const fit = () => { const p = g.parentElement, cs = getComputedStyle(p); const w = p.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight); g.style.fontSize = '100px'; g.style.fontSize = (100 * w / g.getBoundingClientRect().width * 0.99) + 'px'; };
