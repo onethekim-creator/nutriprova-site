@@ -4,27 +4,27 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>NutriProva | Nutrition, proven.</title>
-<meta name="description" content="NutriProva is a Korean health functional food brand by rekaerB Co., Ltd., Seoul. Every number shown. Every reason explained.">
+<meta name="description" content="NutriProva is a research-led health functional food brand from Seoul. We listen to people, research the evidence, and prove every formula.">
 <link rel="canonical" href="https://nutriprova.com/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="NutriProva">
 <meta property="og:title" content="NutriProva | Nutrition, proven.">
-<meta property="og:description" content="A Korean health functional food brand. Every number shown. Every reason explained.">
+<meta property="og:description" content="Research-led nutrition from Seoul. Listen. Research. Prove.">
 <meta property="og:url" content="https://nutriprova.com/">
-<meta property="og:image" content="https://nutriprova.com/hero.jpg">
+<meta property="og:image" content="https://nutriprova.com/lab.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#02246A">
 <link rel="icon" type="image/png" href="emblem-navy.png">
 <link rel="apple-touch-icon" href="emblem-emboss.jpg">
-<link rel="preload" as="image" href="hero.jpg">
+<link rel="preload" as="image" href="lab.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"rekaerB Co., Ltd.","alternateName":["주식회사 리캘비","NutriProva","뉴트리프로바"],"url":"https://nutriprova.com/","logo":"https://nutriprova.com/emblem-navy.png","foundingDate":"2022-04-29","founder":{"@type":"Person","name":"Taewoo Kim"},"email":"contact@nutriprova.com","telephone":"+82-70-8095-2684","address":{"@type":"PostalAddress","streetAddress":"3F 344, 16 Maeheon-ro, Seocho-gu","addressLocality":"Seoul","postalCode":"06771","addressCountry":"KR"},"brand":{"@type":"Brand","name":"NutriProva"}}
+{"@context":"https://schema.org","@type":"Organization","name":"rekaerB Co., Ltd.","alternateName":["주식회사 리캘비","NutriProva","뉴트리프로바"],"url":"https://nutriprova.com/","logo":"https://nutriprova.com/emblem-navy.png","foundingDate":"2022-04-29","founder":{"@type":"Person","name":"Taewoo Kim"},"email":"contact@nutriprova.com","telephone":"+82-70-8095-2684","address":{"@type":"PostalAddress","streetAddress":"3F 344, 16 Maeheon-ro, Seocho-gu","addressLocality":"Seoul","postalCode":"06771","addressCountry":"KR"},"brand":{"@type":"Brand","name":"NutriProva","slogan":"Nutrition, proven."}}
 </script>
 <style>
-:root{--navy:#02246A;--deep:#011338;--cobalt:#054CA3;--silver:#C5C6CE;--mist:#EEF0F4;--ink:#0B1530;
+:root{--navy:#02246A;--deep:#011338;--cobalt:#054CA3;--silver:#C5C6CE;--mist:#F2F3F6;--ink:#0B1530;--muted:#5B6478;
   --serif:"Instrument Serif",Georgia,serif;--sans:"Montserrat",Helvetica,Arial,sans-serif;--ease:cubic-bezier(.2,.7,.1,1)}
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -33,94 +33,88 @@ img{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
 .label{font:600 11px/1 var(--sans);letter-spacing:.32em;text-transform:uppercase}
 .serif{font-family:var(--serif);font-weight:400;letter-spacing:-.02em;line-height:.95}
+em{font-style:italic}
 
-/* nav */
-header{position:fixed;top:0;left:0;right:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:28px 4vw;color:#fff;transition:color .4s,padding .4s}
+/* header */
+header{position:fixed;top:0;left:0;right:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:28px 4vw;color:#fff;transition:color .4s,transform .5s var(--ease)}
 header .logo{display:flex;align-items:center;gap:10px;font:400 26px/1 var(--serif)}
-header .logo img{width:26px;transition:filter .4s;filter:brightness(0) invert(1)}
-header.dark{color:var(--navy)}
-header.dark .logo img{filter:none;content:url(emblem-navy.png)}
-header.hide{transform:translateY(-110%)}
-header{transition:color .4s,transform .5s var(--ease)}
+header .logo img{width:26px;filter:brightness(0) invert(1)}
 header nav{display:flex;gap:34px}
 header nav a{opacity:.85}
 header nav a:hover{opacity:1}
+header.dark{color:var(--navy)}
+header.dark .logo img{filter:none;content:url(emblem-navy.png)}
+header.hide{transform:translateY(-110%)}
 
 /* hero */
-.hero{position:relative;height:100vh;min-height:640px;overflow:hidden;background:var(--deep)}
-.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:68% 50%;transform:scale(1.08);animation:zoom 2.4s var(--ease) forwards}
+.hero{position:relative;height:100vh;min-height:640px;overflow:hidden;background:var(--deep);color:#fff}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% 50%;transform:scale(1.06);animation:zoom 2.6s var(--ease) forwards}
 @keyframes zoom{to{transform:scale(1)}}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(1,19,56,.78) 0%,rgba(1,19,56,.25) 45%,rgba(1,19,56,0) 70%)}
-.hero .copy{position:absolute;left:4vw;bottom:12vh;z-index:2;color:#fff}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(1,19,56,.7) 0%,rgba(1,19,56,.15) 50%,rgba(1,19,56,0) 70%)}
+.hero .copy{position:absolute;left:4vw;bottom:12vh;z-index:2}
+.hero .label{color:var(--silver);display:block;margin-bottom:28px}
 .hero h1{font-size:clamp(64px,10.5vw,176px)}
-.hero h1 em{font-style:italic;color:var(--silver)}
-.hero .label{color:var(--silver);margin-bottom:28px;display:block}
-.scroll{position:absolute;right:4vw;bottom:12vh;z-index:2;color:#fff;writing-mode:vertical-rl;opacity:.7}
+.hero h1 em{color:var(--silver)}
+.scroll{position:absolute;right:4vw;bottom:12vh;z-index:2;writing-mode:vertical-rl;opacity:.7}
 
 /* marquee */
-.marquee{background:var(--navy);color:var(--silver);overflow:hidden;white-space:nowrap;padding:22px 0;border-top:1px solid rgba(197,198,206,.2)}
-.marquee .track{display:inline-flex;animation:slide 38s linear infinite}
+.marquee{background:var(--navy);color:var(--silver);overflow:hidden;white-space:nowrap;padding:22px 0}
+.marquee .track{display:inline-flex;animation:slide 40s linear infinite}
 .marquee span{font:400 30px/1 var(--serif);padding:0 28px;display:inline-flex;align-items:center;gap:56px}
 .marquee span i{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--silver);opacity:.6}
 @keyframes slide{to{transform:translateX(-50%)}}
 
 /* statement */
-.statement{min-height:92vh;display:grid;place-items:center;text-align:center;padding:16vh 6vw}
-.statement .label{color:var(--cobalt);margin-bottom:44px;display:block}
+.statement{min-height:90vh;display:grid;place-items:center;text-align:center;padding:16vh 6vw}
+.statement .label{color:var(--cobalt);display:block;margin-bottom:44px}
 .statement p{font-size:clamp(46px,7vw,118px);color:var(--navy)}
-.statement p em{font-style:italic;color:var(--cobalt)}
+.statement p em{color:var(--cobalt)}
+
+/* method */
+.method{background:var(--mist);padding:18vh 4vw 20vh}
+.method .head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:10vh}
+.method .head h2{font-size:clamp(52px,6.4vw,108px);color:var(--navy)}
+.method .head h2 em{color:var(--cobalt)}
+.method .label{color:var(--cobalt)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:3vw}
+.step .ph{aspect-ratio:4/5;overflow:hidden;background:var(--navy)}
+.step .ph img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease)}
+.step:hover .ph img{transform:scale(1.04)}
+.step .row{display:flex;align-items:baseline;gap:18px;margin-top:26px;padding-top:20px;border-top:1px solid #CDD2DC}
+.step .no{font:400 18px/1 var(--serif);color:var(--cobalt)}
+.step h3{font:400 clamp(36px,3.4vw,54px)/1 var(--serif);color:var(--navy)}
+.step p{margin-top:14px;font-size:15px;line-height:1.65;color:var(--muted);max-width:330px}
+
+/* proof */
+.proof{position:relative;height:100vh;min-height:620px;overflow:hidden;color:#fff}
+.proof img{position:absolute;inset:-8% 0;width:100%;height:116%;object-fit:cover;will-change:transform}
+.proof::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(1,19,56,.88) 0%,rgba(1,19,56,.4) 35%,rgba(1,19,56,0) 65%)}
+.proof .copy{position:absolute;left:4vw;right:4vw;bottom:10vh;z-index:2}
+.proof h2{font-size:clamp(54px,8vw,136px)}
+.proof h2 em{color:var(--silver)}
 
 /* name */
 .name{display:grid;grid-template-columns:1fr 1fr;min-height:100vh;background:var(--navy);color:#fff}
 .name .pic{overflow:hidden}
 .name .pic img{width:100%;height:100%;object-fit:cover}
 .name .txt{display:flex;flex-direction:column;justify-content:center;padding:10vh 7vw}
-.name .eq{font-size:clamp(48px,6.2vw,104px)}
+.name .label{color:var(--silver)}
+.name .eq{font-size:clamp(48px,6.2vw,104px);margin-top:34px}
 .name .eq b{font-weight:400;color:var(--silver)}
-.name .def{margin-top:56px;display:grid;grid-template-columns:auto 1fr;gap:18px 28px;align-items:baseline;max-width:460px}
-.name .def dt{font:400 30px/1 var(--serif);font-style:italic;color:var(--silver)}
-.name .def dd{font-size:15px;line-height:1.6;color:rgba(255,255,255,.72)}
+.name dl{margin-top:56px;display:grid;grid-template-columns:auto 1fr;gap:18px 28px;align-items:baseline;max-width:460px}
+.name dt{font:italic 400 30px/1 var(--serif);color:var(--silver)}
+.name dd{font-size:15px;line-height:1.6;color:rgba(255,255,255,.72)}
 
-/* ritual */
-.ritual{position:relative;height:100vh;min-height:620px;overflow:hidden;color:#fff}
-.ritual img{position:absolute;inset:-8% 0;width:100%;height:116%;object-fit:cover;will-change:transform}
-.ritual::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(1,19,56,.86) 0%,rgba(1,19,56,.45) 32%,rgba(1,19,56,0) 62%)}
-.ritual .copy{position:absolute;left:4vw;right:4vw;bottom:10vh;z-index:2;display:flex;justify-content:space-between;align-items:flex-end;gap:40px;flex-wrap:wrap}
-.ritual h2{font-size:clamp(60px,9vw,150px)}
-.ritual .label{color:#fff;opacity:.85}
-
-/* numbers */
-.numbers{display:grid;grid-template-columns:1fr 1fr;min-height:100vh;background:var(--deep);color:#fff}
-.numbers .inner{display:flex;flex-direction:column;justify-content:center;padding:14vh 4vw 14vh 4vw}
-.numbers .pic{overflow:hidden}
-.numbers .pic img{width:100%;height:100%;object-fit:cover;object-position:43% 50%}
-.numbers .label{color:var(--silver)}
-.grid4{display:grid;grid-template-columns:1fr 1fr;margin-top:8vh;border-top:1px solid rgba(255,255,255,.25)}
-.grid4>div{padding:40px 24px 44px 0;border-bottom:1px solid rgba(255,255,255,.12)}
-.grid4 .n{font:400 clamp(64px,7.6vw,128px)/1 var(--serif)}
-.grid4 .n small{font-size:.32em;margin-left:6px;color:var(--silver)}
-.grid4 .t{margin-top:16px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.75)}
-
-/* product */
-.product{display:grid;grid-template-columns:1fr 1fr;align-items:center;min-height:100vh;background:#F1F2F6}
-.product .pic{height:100%;min-height:100vh;overflow:hidden}
-.product .pic img{width:100%;height:100%;object-fit:cover;object-position:50% 60%}
-.product .txt{padding:12vh 6vw}
-.product .label{color:var(--cobalt)}
-.product h2{font-size:clamp(52px,6vw,98px);color:var(--navy);margin:30px 0 26px}
-.product p{font-size:16px;line-height:1.7;color:#4C5568;max-width:360px}
-.pill{display:inline-block;margin-top:40px;padding:15px 26px;border:1px solid var(--navy);border-radius:40px;font:600 11px/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--navy)}
-
-/* contact + footer */
-.contact{background:var(--navy);color:#fff;padding:20vh 4vw 0;overflow:hidden}
+/* contact */
+.contact{background:var(--deep);color:#fff;padding:20vh 4vw 0;overflow:hidden}
 .contact .row{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;flex-wrap:wrap}
 .contact h2{font-size:clamp(48px,6vw,100px)}
-.contact h2 em{font-style:italic;color:var(--silver)}
+.contact h2 em{color:var(--silver)}
 .contact a.mail{font:400 clamp(24px,2.6vw,40px)/1.2 var(--serif);border-bottom:1px solid rgba(255,255,255,.4);padding-bottom:6px}
 .contact a.mail:hover{border-color:#fff}
 .info{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;margin-top:16vh;padding:34px 0;border-top:1px solid rgba(255,255,255,.18);font-size:13px;line-height:1.7;color:rgba(255,255,255,.66)}
 .info b{display:block;font-weight:600;font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--silver);margin-bottom:8px}
-.giant{font:400 20vw/0.8 var(--serif);letter-spacing:-.03em;color:#fff;white-space:nowrap;margin:3vh 0 1vh;display:inline-block}
+.giant{font:400 20vw/0.8 var(--serif);letter-spacing:-.03em;white-space:nowrap;margin:3vh 0 1vh;display:inline-block}
 .legal{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:24px 0 30px;font-size:11px;color:rgba(255,255,255,.5);border-top:1px solid rgba(255,255,255,.12)}
 
 /* reveal */
@@ -131,20 +125,17 @@ header nav a:hover{opacity:1}
 
 @media (max-width:900px){
   header nav{gap:20px}
-  .name,.product,.numbers{grid-template-columns:1fr}
-  .numbers .pic{height:60vh;order:-1}
-  .product .pic{min-height:80vh}
-  .name .pic{height:70vh}
-  .grid4{grid-template-columns:1fr 1fr}
-  .info{grid-template-columns:1fr 1fr}
   .hero{height:auto;min-height:0;display:flex;flex-direction:column}
-  .hero img{position:relative;height:66vh;object-position:66% 50%}
+  .hero img{position:relative;height:62vh;object-position:76% 50%}
   .hero::after{display:none}
   .hero .copy{position:relative;left:auto;bottom:auto;padding:44px 6vw 64px;background:var(--deep)}
-  .numbers{min-height:0}
-  .numbers .inner{padding:10vh 6vw}
-  .name .txt,.product .txt{padding:10vh 6vw}
   .hero .scroll{display:none}
+  .steps{grid-template-columns:1fr;gap:56px}
+  .step .ph{aspect-ratio:4/3}
+  .name{grid-template-columns:1fr}
+  .name .pic{height:60vh}
+  .name .txt{padding:10vh 6vw}
+  .info{grid-template-columns:1fr 1fr}
 }
 </style>
 </head>
@@ -152,70 +143,70 @@ header nav a:hover{opacity:1}
 
 <header>
   <a class="logo" href="#top"><img src="emblem-white.png" alt="">NutriProva</a>
-  <nav class="label"><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  <nav class="label"><a href="#method">Method</a><a href="#contact">Contact</a></nav>
 </header>
 
 <section class="hero" id="top">
-  <img src="hero.jpg" alt="NutriProva Liquid Magnesium box and stick pouches">
+  <img src="lab.jpg" alt="Glassware on a formulation bench">
   <div class="copy">
-    <span class="label rv">Health Functional Food &mdash; Seoul</span>
+    <span class="label rv">Research-led nutrition &mdash; Seoul</span>
     <h1 class="serif rv d1">Nutrition,<br><em>proven.</em></h1>
   </div>
   <div class="scroll label">Scroll</div>
 </section>
 
 <div class="marquee" aria-hidden="true"><div class="track">
-  <span>NutriProva <i></i> Nutrition, proven. <i></i> Every number shown <i></i> Every reason explained <i></i></span>
-  <span>NutriProva <i></i> Nutrition, proven. <i></i> Every number shown <i></i> Every reason explained <i></i></span>
+  <span>Listen <i></i> Research <i></i> Prove <i></i> NutriProva <i></i> Nutrition, proven. <i></i></span>
+  <span>Listen <i></i> Research <i></i> Prove <i></i> NutriProva <i></i> Nutrition, proven. <i></i></span>
 </div></div>
 
-<section class="statement" id="about" data-light>
+<section class="statement" data-light>
   <div>
-    <span class="label rv">Our promise</span>
-    <p class="serif rv d1">Every number shown.<br><em>Every reason explained.</em></p>
+    <span class="label rv">Where we begin</span>
+    <p class="serif rv d1">We don&rsquo;t start with a product.<br><em>We start with you.</em></p>
+  </div>
+</section>
+
+<section class="method" id="method" data-light>
+  <div class="head">
+    <h2 class="serif rv">Listen. Research.<br><em>Prove.</em></h2>
+    <span class="label rv d1">How every NutriProva formula is made</span>
+  </div>
+  <div class="steps">
+    <div class="step rv">
+      <div class="ph"><img src="listen.jpg" alt="Notebook and notes from customer research" loading="lazy"></div>
+      <div class="row"><span class="no">01</span><h3>Listen</h3></div>
+      <p>We read what people actually say about their daily routines, before we write a single formula.</p>
+    </div>
+    <div class="step rv d1">
+      <div class="ph"><img src="crystal.jpg" alt="Mineral crystals" loading="lazy"></div>
+      <div class="row"><span class="no">02</span><h3>Research</h3></div>
+      <p>Every ingredient, form and amount is chosen against published evidence and Korean standards.</p>
+    </div>
+    <div class="step rv d2">
+      <div class="ph"><img src="measure.jpg" alt="Precision balance weighing mineral powder" loading="lazy"></div>
+      <div class="row"><span class="no">03</span><h3>Prove</h3></div>
+      <p>Made with licensed Korean manufacturers, tested before release, and fully disclosed.</p>
+    </div>
+  </div>
+</section>
+
+<section class="proof">
+  <img id="px" src="research.jpg" alt="Researcher dispensing a single drop" loading="lazy">
+  <div class="copy">
+    <h2 class="serif rv">Every number shown.<br><em>Every reason explained.</em></h2>
   </div>
 </section>
 
 <section class="name">
   <div class="pic"><img src="emblem-emboss.jpg" alt="NutriProva bird emblem" loading="lazy"></div>
   <div class="txt">
-    <span class="label rv" style="color:var(--silver)">The name</span>
-    <div class="eq serif rv d1" style="margin-top:34px">Nutri <b>+</b> Prova</div>
-    <dl class="def rv d2">
+    <span class="label rv">The name</span>
+    <div class="eq serif rv d1">Nutri <b>+</b> Prova</div>
+    <dl class="rv d2">
       <dt>Nutri</dt><dd>Nutrition, every day.</dd>
       <dt>Prova</dt><dd>Italian for &ldquo;proof.&rdquo;</dd>
     </dl>
-  </div>
-</section>
-
-<section class="ritual">
-  <img id="px" src="ritual.jpg" alt="Tearing open a NutriProva stick at a desk" loading="lazy">
-  <div class="copy">
-    <h2 class="serif rv">Tear. Drink.<br><em>Done.</em></h2>
-    <span class="label rv d1">One stick a day &middot; No water &middot; No pills</span>
-  </div>
-</section>
-
-<section class="numbers">
-  <div class="pic"><img src="drop.jpg" alt="" loading="lazy"></div>
-  <div class="inner">
-    <span class="label rv">In every stick</span>
-    <div class="grid4">
-      <div class="rv"><div class="n">150<small>mg</small></div><div class="t">Magnesium</div></div>
-      <div class="rv d1"><div class="n">5</div><div class="t">Essential nutrients</div></div>
-      <div class="rv d2"><div class="n">0<small>g</small></div><div class="t">Sugars</div></div>
-      <div class="rv d3"><div class="n">1</div><div class="t">Stick a day</div></div>
-    </div>
-  </div>
-</section>
-
-<section class="product" data-light>
-  <div class="pic"><img src="product.jpg" alt="NutriProva Liquid Magnesium box with stick pouches" loading="lazy"></div>
-  <div class="txt">
-    <span class="label rv">First release</span>
-    <h2 class="serif rv d1">Liquid<br>Magnesium</h2>
-    <p class="rv d2">Magnesium, zinc and vitamins B1, B2 and B6 in one drinkable stick. Made in Korea.</p>
-    <span class="pill rv d3">Coming soon &middot; Korea</span>
   </div>
 </section>
 
@@ -233,28 +224,27 @@ header nav a:hover{opacity:1}
   <div class="giant" aria-hidden="true">NutriProva</div>
   <div class="legal">
     <span>&copy; 2026 rekaerB Co., Ltd. All rights reserved.</span>
-    <span>Health functional food. Not a medicine; not intended to diagnose, treat or prevent any disease.</span>
+    <span>Health functional food brand. Not a medicine; not intended to diagnose, treat or prevent any disease.</span>
   </div>
 </footer>
 
 <script>
-  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), {threshold:.15});
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), {threshold:.12});
   document.querySelectorAll('.rv').forEach(el => io.observe(el));
   const px = document.getElementById('px'), hd = document.querySelector('header');
   const lights = [...document.querySelectorAll('[data-light]')];
+  let lastY = 0;
   const onScroll = () => {
     const r = px.parentElement.getBoundingClientRect();
     if (r.bottom > 0 && r.top < innerHeight) px.style.transform = `translateY(${(r.top / innerHeight) * -6}%)`;
-    const y = 40; // header line
-    const onLight = lights.some(s => { const b = s.getBoundingClientRect(); return b.top <= y && b.bottom >= y; });
-    hd.classList.toggle('dark', onLight);
+    hd.classList.toggle('dark', lights.some(s => { const b = s.getBoundingClientRect(); return b.top <= 40 && b.bottom >= 40; }));
     const sy = scrollY; hd.classList.toggle('hide', sy > lastY && sy > 200); lastY = sy;
   };
-  let lastY = 0;
   addEventListener('scroll', onScroll, {passive:true}); onScroll();
   const g = document.querySelector('.giant');
   const fit = () => { const p = g.parentElement, cs = getComputedStyle(p); const w = p.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight); g.style.fontSize = '100px'; g.style.fontSize = (100 * w / g.getBoundingClientRect().width * 0.99) + 'px'; };
-  document.fonts.ready.then(fit); addEventListener('load', fit); addEventListener('resize', fit); setTimeout(fit, 1500); document.fonts.addEventListener && document.fonts.addEventListener('loadingdone', fit); new ResizeObserver(fit).observe(g.parentElement);
+  document.fonts.ready.then(fit); addEventListener('load', fit); addEventListener('resize', fit); setTimeout(fit, 1500);
+  new ResizeObserver(fit).observe(g.parentElement);
 </script>
 </body>
 </html>
