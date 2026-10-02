@@ -290,7 +290,7 @@ footer h2 em{color:var(--silver)}
   let total = 1, top0 = 0, h0 = 1;
   const center = el => { const r = el.getBoundingClientRect(), f = fl.getBoundingClientRect(); return [r.left - f.left + r.width / 2, r.top - f.top + r.height / 2]; };
   const build = () => {
-    const W = fl.clientWidth, H = fl.clientHeight, m = Math.max(16, W * .035);
+    const W = fl.clientWidth, H = fl.clientHeight, m = Math.max(24, W * .08);
     svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
     const s = center(fl.querySelector('[data-anchor=start]')), e = center(fl.querySelector('[data-anchor=end]'));
     const secs = [...fl.querySelectorAll(':scope > section')];
