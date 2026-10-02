@@ -295,7 +295,7 @@ footer h2 em{color:var(--silver)}
     const s = center(fl.querySelector('[data-anchor=start]')), e = center(fl.querySelector('[data-anchor=end]'));
     const secs = [...fl.querySelectorAll(':scope > section')];
     const pts = [[s[0] + 10, s[1] + 30]];
-    secs.slice(0, -1).forEach((sec, i) => { const y = sec.offsetTop + sec.offsetHeight - (i === 0 ? 150 : 60); pts.push([i % 2 === 0 ? W - m : m, y]); });
+    secs.slice(0, -1).forEach((sec, i) => { const y = sec.offsetTop + sec.offsetHeight - (i === 0 ? 150 : 60); pts.push([i === 0 ? W * .72 : i % 2 === 0 ? W - m : m, y]); });
     pts.push([e[0] - 30, e[1] + 40]);
     let d = `M${pts[0][0]},${pts[0][1]}`;
     for (let i = 0; i < pts.length - 1; i++) {
